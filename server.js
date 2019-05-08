@@ -22,6 +22,7 @@ app.use(jsonParser);
 app.use(cors(corsOptions));
 let lastId = Object.keys(productos).length;
 app.use(log);
+app.get('/', (req, res) => res.send('Hello DASWorld!'));
 app.route('/producto')
     .get((req,res)=>{ 
         if(req.query.marca){
