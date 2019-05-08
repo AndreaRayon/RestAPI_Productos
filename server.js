@@ -2,7 +2,7 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
-const port = 3000;
+const port =  process.env.PORT || 3000;
 const chalk = require('chalk');
 const bodyParser = require('body-parser');
 const cors = require('cors');
